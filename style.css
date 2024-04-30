@@ -27,14 +27,27 @@ body {
 header {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    padding: 15px 27px;
+    padding: 15px 30px;
     position: absolute;
     width: 100%;
 
 
 
 }
+#menu_btn:hover{
+    background-color: #00000017;
+}
 
+.desktop a:hover{
+    background-color: #00000017;
+    border-radius: 4px;
+
+}
+.svg:hover{
+    background-color: #00000017;
+    border-radius: 4px;
+
+}
 @media (max-width:1200px) {
     .desktop {
         display: none;
@@ -52,13 +65,14 @@ header {
         text-align: right;
 
     }
-
+   
     header {
         padding-left: 10px;
         padding-right: 2px;
     }
 
 }
+
 a.logo {
     width: 140px;
     color: inherit;
@@ -74,7 +88,8 @@ header nav.right {
 
 header nav.right .desktop {
     width: 35px;
-    padding: 0px 5px;
+    padding: 3px 5px 0px;
+
 
 }
 
@@ -104,7 +119,7 @@ section .content {
     padding-bottom: 10vh;
     text-align: center;
     display: grid;
-    grid-template-rows: min-content min-content auto min-content min-content ;
+    grid-template-rows: min-content min-content auto min-content min-content;
 
 }
 
@@ -137,38 +152,43 @@ section .buttons a {
     border-radius: 5px;
     width: 260px;
     margin: 10px 20px;
-    background-color: #232020;
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(2px);
     color: #ffffff;
 
 
 }
 
 
+
 @media (max-width:600px) {
 
-    section .buttons a { 
+    section .buttons a {
         min-width: 88vw;
     }
-    footer a{
+
+    footer a {
         padding: 0px;
     }
 
-    footer ul{
+    footer ul {
         display: flex;
         flex-direction: column;
     }
-    .del_footer{
+
+    .del_footer {
         display: none;
     }
 
 }
-footer{
+
+footer {
     position: absolute;
     width: 100%;
 
 }
 
-footer ul{
+footer ul {
     text-align: center;
     padding: 20px;
     font-size: small;
@@ -181,7 +201,7 @@ footer li {
 
 }
 
-footer li a{
+footer li a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
